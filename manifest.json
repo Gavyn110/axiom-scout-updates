@@ -1,0 +1,13 @@
+{
+  "version": "2.5.0",
+  "channel": "stable",
+  "package_encoding": "base64",
+  "package_parts": [
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.0/part00.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.0/part01.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.0/part02.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.0/part03.b64"
+  ],
+  "sha256": "8b88d6ce120fa7cddf61e891ad1eb683751eae738196e4fc914473d600df699a",
+  "notes": "Adds one-click update checks, verified installs, automatic backup/restart, and Roll back last update."
+}
