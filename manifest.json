@@ -1,13 +1,13 @@
 {
-  "version": "2.5.0",
+  "version": "2.5.1",
   "channel": "stable",
   "package_encoding": "base64",
   "package_parts": [
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.0/part00.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.0/part01.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.0/part02.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.0/part03.b64"
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.1/part00.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.1/part01.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.1/part02.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.5.1/part03.b64"
   ],
-  "sha256": "8b88d6ce120fa7cddf61e891ad1eb683751eae738196e4fc914473d600df699a",
-  "notes": "Adds one-click update checks, verified installs, automatic backup/restart, and Roll back last update."
+  "sha256": "56b15b29067582a17fc6553b68bc7337bf171f6c1f09d6e26be81f45254e0306",
+  "notes": "Updater hardening: Verify package button, update history, interrupted-install auto-recovery, portable rollback metadata, and stricter download/ZIP safety checks."
 }
