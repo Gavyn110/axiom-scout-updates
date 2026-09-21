@@ -1,15 +1,15 @@
 {
-  "version": "2.10.0",
+  "version": "2.10.1",
   "channel": "stable",
   "package_encoding": "base64",
   "package_parts": [
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.0/part00.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.0/part01.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.0/part02.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.0/part03.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.0/part04.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.0/part05.b64"
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.1/part00.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.1/part01.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.1/part02.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.1/part03.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.1/part04.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.1/part05.b64"
   ],
-  "sha256": "c7fd0d0ec65ece090f665c2b4b04a1e7f53fb1807a2ae8664c5df7a5e537c778",
-  "notes": "Strategy-faithful paper + profit-aware exits: normal Paper no longer forces weak fallback buys or 10-30 second rotation sells. Take-profit/stop status use estimated net proceeds after modeled exit costs; added configurable trailing activation and profit-lock trigger/floor; LIVE take-profit orders enforce a Jupiter minimum-output target. Entry/exit signals now include momentum acceleration, buy-pressure trends, liquidity growth, holder-count growth, ownership broadening/concentration, and holder-flow deterioration."
+  "sha256": "9ceefdc4c7f1116aff4bf12cf68ae5b57ca5788b394c9659ed41b2cbe6e92121",
+  "notes": "Strategy-faithful paper + profit-aware exits: normal Paper no longer forces weak fallback buys or short rotation sells. Take-profit/stop status use estimated net proceeds after modeled exit costs; added trailing activation and profit-lock trigger/floor; LIVE take-profit orders enforce a Jupiter minimum-output target. Momentum/holder-flow scoring now uses buy-pressure trends, liquidity/holder growth and ownership broadening/concentration. Adds a Paper-only reset button for a clean strategy test after the forced-activity 2.9.x builds; LIVE data and credentials are untouched."
 }
