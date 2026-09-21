@@ -1,15 +1,15 @@
 {
-  "version": "2.9.5",
+  "version": "2.9.6",
   "channel": "stable",
   "package_encoding": "base64",
   "package_parts": [
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.5/part00.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.5/part01.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.5/part02.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.5/part03.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.5/part04.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.5/part05.b64"
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.6/part00.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.6/part01.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.6/part02.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.6/part03.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.6/part04.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.9.6/part05.b64"
   ],
-  "sha256": "78e53dd713575e04a14e21cd8e54afbdbb785c74047984b86f00b29c4cb2c36e",
-  "notes": "Paper trading action fix: if an entire paper scan has no normal BUY, Scout can place one small paper-only fallback BUY in the best candidate that is not hard-blocked. Higher paper risk may bypass soft quality misses only; hard safety failures still block. Paper positions also get risk-adjusted time exits so continuous mode cycles through BUY/HOLD/SELL instead of becoming HOLD-only. LIVE never uses the fallback or paper time-exit paths."
+  "sha256": "edd35a3034a101c33cc439e802e2438b351a05b2c97603cc4b16e37148f67660",
+  "notes": "Paper execution-loop + LIVE readiness release: paper mode now produces BUY/SELL activity for safe soft-miss candidates across risk 1-10, rotates full simulated portfolios, surfaces trades first, and reports cycle action counts. LIVE adds a read-only wallet/RPC/Jupiter order-build preflight required before arming and disarms on ambiguous execute failures. Hard safety blocks and live strategy gates remain strict."
 }
