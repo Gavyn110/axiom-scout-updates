@@ -1,16 +1,16 @@
 {
-  "version": "2.10.2",
+  "version": "2.10.3",
   "channel": "stable",
   "package_encoding": "base64",
   "package_parts": [
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.2/part00.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.2/part01.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.2/part02.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.2/part03.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.2/part04.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.2/part05.b64",
-    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.2/part06.b64"
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.3/part00.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.3/part01.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.3/part02.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.3/part03.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.3/part04.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.3/part05.b64",
+    "https://raw.githubusercontent.com/Gavyn110/axiom-scout-updates/main/releases/v2.10.3/part06.b64"
   ],
-  "sha256": "8be821d0b122546d377bdd424b4b03ab38cd8d6895a8a538f836f17bf67fd53e",
-  "notes": "Live execution reconciliation hardening: removes request/quote fill fallbacks, requires settled Jupiter wallet totals, preserves landed-but-unreconciled transaction signatures and blocks retries, and retries only transient execute transport failures with the same signed transaction/requestId. 133 tests passed."
+  "sha256": "e86cd2cb7ab5ca1df453f49ee42fa270e9a71c74241c07685a0c410233f45c99",
+  "notes": "Live activity regression repair: restores encrypted Jupiter API-key wiring and Control Center setup, restores executable-quote fee-aware LIVE exits plus maximum hold, fixes advanced exit-setting saves, and makes missing fresh news neutral at LIVE risk 5-10 while retaining negative-news safety blocks. Preserves v2.10.2 landed/unreconciled execution protections. 145 tests passed."
 }
